@@ -1,0 +1,16 @@
+﻿namespace Maybe.Interfaces;
+
+public interface IMaybe<T>
+{
+    public T Get();
+
+    public T GetOrElse(T defaultValue);
+
+    public T GetOrCall(Func<T> defaultFunc);
+
+    public T GetOrThrow(Exception exception);
+
+    public bool IsEmpty();
+
+    public bool IsNotEmpty();
+}
