@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maybe", "Maybe\Maybe\Maybe.csproj", "{FB5D61EB-5F52-43BB-8248-362BB8C20D43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maybe.Tests", "Maybe.Tests\Maybe.Tests\Maybe.Tests.csproj", "{E2599782-8AD9-4FBB-BFA1-1FC22017DB99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB5D61EB-5F52-43BB-8248-362BB8C20D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB5D61EB-5F52-43BB-8248-362BB8C20D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB5D61EB-5F52-43BB-8248-362BB8C20D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB5D61EB-5F52-43BB-8248-362BB8C20D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2599782-8AD9-4FBB-BFA1-1FC22017DB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2599782-8AD9-4FBB-BFA1-1FC22017DB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2599782-8AD9-4FBB-BFA1-1FC22017DB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2599782-8AD9-4FBB-BFA1-1FC22017DB99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
