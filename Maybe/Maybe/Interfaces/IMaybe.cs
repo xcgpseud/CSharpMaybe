@@ -12,7 +12,7 @@ public interface IMaybe<T>
 
     public T GetOrThrow(Exception exception);
 
-    public bool IsEmpty();
+    public bool IsValid();
 
-    public bool IsNotEmpty();
+    public bool IsInvalid();
 }

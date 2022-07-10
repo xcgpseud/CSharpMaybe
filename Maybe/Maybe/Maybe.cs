@@ -51,7 +51,7 @@ public abstract class Maybe<T> : IMaybe<T>
 
     public abstract T GetOrThrow(Exception exception);
 
-    public abstract bool IsEmpty();
+    public abstract bool IsValid();
 
-    public abstract bool IsNotEmpty();
+    public abstract bool IsInvalid();
 }

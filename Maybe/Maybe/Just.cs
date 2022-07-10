@@ -18,7 +18,7 @@ public class Just<T> : Maybe<T>
 
     public override T GetOrThrow(Exception exception) => _innerValue;
 
-    public override bool IsEmpty() => false;
+    public override bool IsValid() => true;
 
-    public override bool IsNotEmpty() => true;
+    public override bool IsInvalid() => false;
 }

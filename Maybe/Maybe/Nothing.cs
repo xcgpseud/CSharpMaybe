@@ -14,7 +14,7 @@ public class Nothing<T> : Maybe<T>
 
     public override T GetOrThrow(Exception exception) => throw exception;
 
-    public override bool IsEmpty() => true;
+    public override bool IsValid() => false;
 
-    public override bool IsNotEmpty() => false;
+    public override bool IsInvalid() => true;
 }
