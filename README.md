@@ -44,6 +44,7 @@ var nothing = Option<string>.From(
 
 // ---
 // Once the Maybe is defined (be it Just a value or Nothing) we can retrieve its value whilst defining a default behaviour if the value is invalid.
+```
 
 | Method 					| `Just<T>` behaviour 			| `Nothing<T> behaviour 					|
 | :-------------------------------------------: | :-----------------------------------: | :-----------------------------------------------------------: |
