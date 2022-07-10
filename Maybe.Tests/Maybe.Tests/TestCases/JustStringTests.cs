@@ -7,7 +7,7 @@ using NUnit.Framework;
 
 namespace Maybe.Tests.TestCases;
 
-public class JustTests : MaybeTestBase
+public class JustStringTests : MaybeTestBase
 {
     private const string DefaultValue = "Mercedes";
     private const string InvalidValue = "Volvo";
