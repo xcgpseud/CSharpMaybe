@@ -14,6 +14,7 @@ public class Just<T> : Maybe<T>
     public override T GetOrElse(T defaultValue) => _innerValue;
 
     public override T GetOrCall(Func<T> defaultFunc) => _innerValue;
+    public override async Task<T> GetOrCallAsync(Func<Task<T>> defaultFunc) => await Task.FromResult(_innerValue);
 
     public override T GetOrThrow(Exception exception) => _innerValue;
 

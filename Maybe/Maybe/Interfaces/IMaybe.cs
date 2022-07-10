@@ -8,6 +8,8 @@ public interface IMaybe<T>
 
     public T GetOrCall(Func<T> defaultFunc);
 
+    public Task<T> GetOrCallAsync(Func<Task<T>> defaultFunc);
+
     public T GetOrThrow(Exception exception);
 
     public bool IsEmpty();
