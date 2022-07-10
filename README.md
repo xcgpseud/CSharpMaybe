@@ -54,4 +54,4 @@ var nothing = Option<string>.From(
 | `GetOrCallAsync(Func<Task<T>> defaultFunc)` 	| Returns the value wrapped in a Task 	| Returns the result of running the passed `async defaultFunc` 	|
 | `GetOrThrow(Exception exception)` 		| Returns the value 			| Throws the passed `exception` 				|
 | `IsValid()` 					| Returns true 				| Returns false 						|
-| `IsInvalid() 					| Returns false 			| Returns true 							|
+| `IsInvalid()` 				| Returns false 			| Returns true 							|
