@@ -8,17 +8,11 @@ public abstract class Maybe<T> : IMaybe<T>
     // This sig catches from(value) | from(value, func) | from(value, func, invalidValues)
     public static IMaybe<T> From(T value, Func<T, bool>? invalidityCheck = null, params T[] invalidValues)
     {
-        if (value == null)
-        {
-            return new Nothing<T>();
-        }
-
-        if (IsInvalidAsPerCallback(value, invalidityCheck))
-        {
-            return new Nothing<T>();
-        }
-
-        if (IsInvalidAsPerInvalidValues(value, invalidValues))
+        if (
+            value == null ||
+            IsInvalidAsPerCallback(value, invalidityCheck) ||
+            IsInvalidAsPerInvalidValues(value, invalidValues)
+        )
         {
             return new Nothing<T>();
         }
